@@ -6,57 +6,56 @@ class About extends React.Component {
     super();
     this.state = {
       skills: [
-        { id: "HTML5_skill", content: "HTML5", porcentage: "80%", value: "80" },
-        { id: "CSS3_skill", content: "CSS3", porcentage: "75%", value: "75" },
         {
-          id: "JavaScript_skill",
-          content: "JavaScript",
-          porcentage: "90%",
-          value: "90"
-        },
-        { id: "PHP_skill", content: "PHP", porcentage: "70%", value: "70" },
-        {
-          id: "ReactJS_skill",
-          content: "ReactJS",
+          id: "Laravel",
+          content: "Laravel",
+          duration: "2 Years",
           porcentage: "80%",
-          value: "80"
+          value: "80",
         },
         {
-          id: "Python_skill",
-          content: "Python",
-          porcentage: "75%",
-          value: "75"
-        },
-        {
-          id: "VanillaJS_skill",
-          content: "VanillaJS",
-          porcentage: "85%",
-          value: "85"
-        },
-        {
-          id: "Wordpress_skill",
-          content: "Wordpress",
+          id: "NextJs / ReactJs",
+          content: "NextJs / ReactJs",
+          duration: "2 Years",
           porcentage: "80%",
-          value: "80"
+          value: "80",
+        },
+        {
+          id: "NuxtJs / VueJs",
+          content: "NuxtJs / VueJs",
+          duration: "1.5 Years",
+          porcentage: "70%",
+          value: "70",
+        },
+        {
+          id: "MYSQL",
+          content: "MYSQL",
+          duration: "2.5 Years",
+          porcentage: "80%",
+          value: "80",
+        },
+        {
+          id: "Docker",
+          content: "Docker",
+          duration: "2 Years",
+          porcentage: "80%",
+          value: "80",
+        },
+        {
+          id: "NodeJs",
+          content: "NodeJs",
+          duration: "0.5 Years",
+          porcentage: "60%",
+          value: "60",
         }
       ],
       about_me: [
         {
           id: "first-p-about",
           content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+            "Full-Stack Developer and Software Engineer with 2+ years of experience building scalable web applicationsand robust backend systems. Proficient in modern frameworks like Nuxt.js, Next.js, React.js, Vue.js, and Laravel, as well as Node.js and MySQL for database management. Experienced in deploying cloud-based solutions using AWS and Huawei Cloud. Passionate about delivering high-quality, performance-driven software solutions across industries.",
         },
-        {
-          id: "second-p-about",
-          content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
-        },
-        {
-          id: "third-p-about",
-          content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
-        }
-      ]
+      ],
     };
   }
 
@@ -92,7 +91,7 @@ class About extends React.Component {
                           <React.Fragment key={skill.id}>
                             <span>{skill.content}</span>{" "}
                             <span className="pull-right">
-                              {skill.porcentage}
+                              {skill.duration}
                             </span>
                             <div className="progress">
                               <div
@@ -116,7 +115,7 @@ class About extends React.Component {
                       </div>
                       {this.state.about_me.map(content => {
                         return (
-                          <p className="lead" key={content.id}>
+                          <p className="lead" key={content.id} style={{ textAlign:"justify"}}>
                             {content.content}
                           </p>
                         );

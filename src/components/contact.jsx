@@ -21,7 +21,7 @@ class Contact extends React.Component {
                       </div>
                       <div>
                         <form
-                          action="https://formspree.io/xdoeonlo"
+                          action="https://formspree.io/f/mnnjynly"
                           method="POST"
                           className="contactForm"
                         >
@@ -119,29 +119,28 @@ class Contact extends React.Component {
                         <ul>
                           <li>
                             <a
-                              href=""
+                              href="https://wa.me/60133210311"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
                               <span className="ico-circle">
-                                <i className="ion-social-codepen"></i>
+                                <i className="ion-social-whatsapp"></i>
                               </span>
                             </a>
                           </li>
                           <li>
                             <a
-                              href=""
-                              target="_blank"
+                              href="mailto:wenjet01@gmail.com"
                               rel="noopener noreferrer"
                             >
                               <span className="ico-circle">
-                                <i className="ion-social-github"></i>
+                                <i className="ion-android-mail"></i>
                               </span>
                             </a>
                           </li>
                           <li>
                             <a
-                              href=""
+                              href="https://www.linkedin.com/in/wenjet-chee-730662292"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -163,8 +162,7 @@ class Contact extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-sm-12">
-                <div className="copyright-box">
-                </div>
+                <div className="copyright-box"></div>
               </div>
             </div>
           </div>

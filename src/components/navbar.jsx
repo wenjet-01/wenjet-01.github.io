@@ -123,7 +123,7 @@ class Navbar extends React.Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll" href="#work">
-                  Work
+                  Projects
                 </a>
               </li>
               <li className="nav-item">

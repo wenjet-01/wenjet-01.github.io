@@ -45,8 +45,22 @@ class About extends React.Component {
           id: "NodeJs",
           content: "NodeJs",
           duration: "0.5 Years",
-          porcentage: "60%",
-          value: "60",
+          porcentage: "50%",
+          value: "50",
+        },
+        {
+          id: "Django",
+          content: "Django",
+          duration: "0.5 Years",
+          porcentage: "50%",
+          value: "50",
+        },
+        {
+          id: "AWS Cloud, Apache, Nginx, Java, Linux, etc...",
+          content: "AWS Cloud, Apache, Nginx, Java, Linux, etc...",
+          duration: "",
+          porcentage: "100%",
+          value: "100",
         }
       ],
       about_me: [
